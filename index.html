@@ -1,32 +1,55 @@
 <!DOCTYPE html>
+<!-- Define que este documento es HTML5 -->
 <html lang="es">
+<!-- El idioma principal del documento es español -->
+
 <head>
     <meta charset="UTF-8">
+    <!-- Establece la codificación de caracteres a UTF-8, permitiendo tildes y caracteres especiales -->
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Hace que el sitio sea responsive: adapta el ancho de la página al tamaño del dispositivo -->
+
     <title>Landing Page</title>
+    <!-- Título que se muestra en la pestaña del navegador -->
+
     <link rel="stylesheet" href="style.css">
+    <!-- Enlaza una hoja de estilos CSS externa llamada "style.css" -->
 </head>
+
 <body>
+<!-- Comienza el cuerpo de la página, todo lo visible por el usuario -->
 
 <header>
+    <!-- Sección del encabezado (header), normalmente contiene título y mensaje de bienvenida -->
     <div class="container">
+        <!-- Contenedor con clase "container" que agrupa el contenido para aplicar estilos -->
         <h1>¡Bienvenido a nuestra página!</h1>
+        <!-- Título principal del sitio -->
         <p>Sitio web de muestra para una empresa ficticia</p>
+        <!-- Descripción corta de qué trata el sitio -->
         <a href="#features" class="btn">Ver características</a>
+        <!-- Botón/enlace que lleva a la sección de características usando un ancla -->
     </div>
 </header>
 
 <section id="features">
+    <!-- Sección con el ID "features", para mostrar las características del producto/servicio -->
     <div class="container">
         <h2>Características principales</h2>
+        <!-- Título de la sección -->
+
         <div class="feature">
+            <!-- Cada característica está en un div con clase "feature" -->
             <h3>Facilidad de uso</h3>
             <p>Nuestra plataforma es fácil de usar para cualquier persona, sin importar su experiencia.</p>
         </div>
+
         <div class="feature">
             <h3>Diseño moderno</h3>
             <p>Nuestro diseño está actualizado con las últimas tendencias para brindar la mejor experiencia al usuario.</p>
         </div>
+
         <div class="feature">
             <h3>Soporte 24/7</h3>
             <p>Ofrecemos soporte técnico las 24 horas del día, los 7 días de la semana, para ayudarte en cualquier momento.</p>
@@ -35,12 +58,17 @@
 </section>
 
 <section id="testimonials">
+    <!-- Sección de testimonios de clientes, identificada con el ID "testimonials" -->
     <div class="container">
         <h2>Testimonios</h2>
+
         <div class="testimonial">
+            <!-- Testimonio de un cliente -->
             <p>"¡Increíble servicio! ¡Gracias por hacer mi vida más fácil!"</p>
             <cite>- Cliente feliz</cite>
+            <!-- Nombre o firma del cliente -->
         </div>
+
         <div class="testimonial">
             <p>"Nunca pensé que encontraría una solución tan genial. ¡Recomendado al 100%!"</p>
             <cite>- Otro cliente satisfecho</cite>
@@ -49,18 +77,28 @@
 </section>
 
 <section id="contact">
+    <!-- Sección de contacto con formulario para enviar mensajes -->
     <div class="container">
         <h2>Contacto</h2>
         <form action="#" method="post">
+            <!-- Formulario que usa el método POST (enviar datos al servidor) -->
             <input type="text" name="name" placeholder="Nombre" required>
+            <!-- Campo para el nombre, obligatorio -->
+
             <input type="email" name="email" placeholder="Correo electrónico" required>
+            <!-- Campo para email, obligatorio -->
+
             <textarea name="message" placeholder="Mensaje" required></textarea>
+            <!-- Área de texto para el mensaje -->
+
             <button type="submit" class="btn">Enviar mensaje</button>
+            <!-- Botón para enviar el formulario -->
         </form>
     </div>
 </section>
 
 <footer>
+    <!-- Pie de página con derechos reservados -->
     <div class="container">
         <p>&copy; 2025 Compañía XYZ. Todos los derechos reservados.</p>
     </div>
